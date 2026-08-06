@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing URL Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 320px;
+      padding: 14px;
+      margin: 0;
+      background: #f7f7f8;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 8px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    #checkBtn { background: #111827; color: white; }
+    #tabBtn { background: #2563eb; color: white; }
+    #result {
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 8px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      font-size: 14px;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+    .safe { color: #166534; font-weight: 700; }
+    .phish { color: #b91c1c; font-weight: 700; }
+    .muted { color: #6b7280; }
+  </style>
+</head>
+<body>
+  <h2>Phishing URL Detector</h2>
+  <input id="urlInput" type="text" placeholder="Enter a URL, e.g. google.com" />
+  <button id="checkBtn">Check Typed URL</button>
+  <button id="tabBtn">Check Current Tab</button>
+  <div id="result"><span class="muted">Waiting for input...</span></div>
+  <script src="popup.js"></script>
+</body>
+</html>
